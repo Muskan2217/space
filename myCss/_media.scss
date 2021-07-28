@@ -1,0 +1,374 @@
+// navigation=========================
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+@media (max-width: 1000px) {
+  nav {
+    .mybtn {
+      display: none;
+    }
+
+    menu {
+      margin-right: -5rem;
+    }
+  }
+}
+
+@media (max-width: 782px) {
+  html {
+    font-size: 15px;
+  }
+  nav {
+    .logo {
+      margin-top: 1rem;
+      font-size: 1.4rem;
+    }
+    menu {
+      display: none;
+      background-color: $creamy;
+      margin: 0 auto;
+      width: 80%;
+      text-align: center;
+      margin-top: 1rem;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+
+      ul {
+        flex-direction: column;
+
+        li {
+          padding: 1.4rem 0;
+          border-bottom: 1px solid rgb(221, 221, 221);
+          a.active {
+            color: $blue;
+            background-color: transparent;
+          }
+          a.nav-link.active:hover {
+            background-color: transparent;
+            color: $orangered;
+          }
+        }
+
+        li:hover {
+          background-color: rgb(201, 201, 201);
+        }
+      }
+    }
+  }
+}
+
+// hambergeremenu
+
+@media (max-width: 782px) {
+  #hamburgermenu {
+    display: flex;
+    position: absolute;
+
+    top: 25px;
+    left: 85%;
+  }
+}
+
+// navigation ends here
+
+// home section starts  ======================================
+
+@media (max-width: 1100px) {
+  .home_section {
+    .inner_left {
+      h6 {
+        font-size: 0.8rem;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      .web_url {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .home_section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .inner_left {
+      padding-top: 30%;
+      width: 70%;
+      margin: 0 auto;
+      .web_url {
+        width: 80%;
+        margin: 2rem auto;
+        form {
+          flex-wrap: nowrap;
+        }
+      }
+    }
+
+    .inner_right {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .home_section {
+    .inner_left {
+      padding-top: 50%;
+       h6 {  font-size: 1.3rem; }
+       h1 { font-size: 2.8rem; }
+       p { font-size: 0.8rem;}
+      .web_url {
+        form {
+          justify-content: space-around;
+          input {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+// home section  ends----------
+
+// about us section 1000px----------------------------
+
+@media (max-width: 1000px) {
+  .about_wrapper {
+    height: 1000px;
+    position: relative;
+    z-index: -9;
+    .about_section {
+      background: none;
+      padding: 0;
+
+      .about_section_right {
+        margin: 0 auto;
+        width: 65%;
+        justify-content: center;
+
+        .box {
+          width: 450px;
+          padding: 6% 5% 4%;
+          border-radius: 1.5rem;
+          background-image: linear-gradient(
+            105deg,
+            rgba(255, 77, 30, 1) 0%,
+            rgba(255, 44, 109, 1) 100%
+          );
+        }
+      }
+
+      .about_section_left {
+        order: 2;
+        width: 100%;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        bottom: 0;
+        z-index: -1;
+
+        img {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .about_wrapper {
+    .about_section {
+      .about_section_right {
+        width: 90%;
+
+        .box {
+          width: 100%;
+        }
+      }
+
+      .about_section_left {
+        top: 60%;
+
+        img {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+//  Service section starts====================================
+
+@media (max-width: 1000px) {
+  .services {
+    .services_left {
+      width: 80%;
+      margin: 20% auto 10%;
+      padding: 0% 3%;
+    }
+
+    .services_right {
+      width: 80%;
+      margin: 0 auto 20%;
+    }
+  }
+}
+
+//  portfolio section start============================================
+
+@media (max-width: 1000px) {
+  .portfolio {
+    .portfolio_inner {
+      .portfolio_content {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .portfolio {
+    .portfolio_inner {
+      .portfolio_content {
+        width: 75%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// blog section===============================================
+
+@media (max-width: 1000px) {
+  .blog_section {
+    .blog_left {
+      width: 80%;
+      margin: 0 auto;
+
+      .textbox {
+        padding-bottom: 10%;
+      }
+      .morebtn {
+        margin-top: -8.5rem;
+        margin-left: 3.5rem;
+        position: absolute;
+      }
+    }
+
+    .blog_right {
+      width: 80%;
+
+      .imagetop {
+        display: none;
+      }
+
+      .blog_right_inner {
+        justify-content: space-between;
+
+        .date {
+          width: 60%;
+        }
+
+        .imagebox {
+          width: 35%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 778px) {
+  .blog_section {
+    .blog_left {
+      .textbox {
+        padding-bottom: 15%;
+      }
+    }
+    .blog_right {
+      .blog_right_inner {
+        .date {
+          width: 100%;
+          padding-left: 0;
+        }
+
+        .imagebox {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .blog_section {
+    .blog_left {
+      .textbox {
+        padding-bottom: 22%;
+      }
+    }
+  }
+}
+
+// Massage section==============================
+
+@media (max-width: 1000px) {
+  .message_section {
+    text-align: center;
+    .message_section_left {
+      justify-content: center;
+      width: 70%;
+      height: 10%;
+      padding: 0;
+
+      h2 {
+        font-size: 2.3rem;
+        padding-bottom: 2rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .message_section_form {
+      width: 70%;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .message_section {
+    .message_section_left {
+      justify-content: center;
+      width: 60%;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// footer-----------
+
+@media (max-width: 460px) {
+  footer {
+    padding: 0 0 10%;
+
+    p {
+      font-size: 0.7rem;
+    }
+  }
+}
