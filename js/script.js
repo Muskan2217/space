@@ -1,5 +1,3 @@
-
-
 // scrollspy
 
 $(document).ready(function () {
@@ -25,11 +23,16 @@ $(document).ready(function () {
   });
 });
 
-
 // navigation toggle
 
 $(document).ready(function () {
   $("#check").click(function () {
     $(".menu_item").slideToggle("1000");
+  });
+});
+
+$(document).ready(function () {
+  $("li a").click(function () {
+    $(".menu_item").hide("1000");
   });
 });
